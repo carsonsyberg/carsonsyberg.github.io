@@ -66,10 +66,19 @@
         </div>
       </div>
       <div class="project-desc">
-        <div class="work-history-title"><h4>{{projects[selectedProject].title}}</h4><p>{{projects[selectedProject].dates}}</p></div>
+        <div class="work-history-title"><h4>{{projects[selectedProject].title}}</h4>
+        <p>{{projects[selectedProject].dates}}</p></div>
+
         <div class="work-history-bullets">
           <p *ngFor="let bullet of projects[selectedProject].desc">{{bullet}}</p>
         </div>
+
+        <a href="https://store.steampowered.com/app/2979620/Spaceman_Wakes_Up_In_A_New_World_The_Government_Has_Been_Experimenting_On_People_On_the_Moon_and_Created_Crazy_Vine_Monsters/" *ngIf="projects[selectedProject].hasLink">
+          <button [ngStyle]="{'color':'darkslategray'}" [disabled]="!selectPreviousEnabled" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" (click)="prevProjectClick()">
+            <mat-icon>link</mat-icon>
+          </button>
+          <p>Steam Page</p>
+        </a>
       </div>
     </div>
     <div class="education card">
