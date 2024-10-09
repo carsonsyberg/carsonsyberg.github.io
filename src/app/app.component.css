@@ -4,6 +4,10 @@ h1 {
   color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 h2 {
    font-size: x-large;
    font-weight: lighter;
@@ -37,10 +41,81 @@ h4 {
   gap: 0.25rem;
 }
 
-@media only screen and (min-width: 1100px) {
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 0.5fr 3fr;
+  gap: 2rem;
+  margin: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: stretch;
+  max-width: 1500px;
+}
+.projects {
+  grid-row-end: span 2;
+}
+
+.project-images img {
+  max-width: 100%;
+  max-height: 30em;
+  margin-right: auto;
+  margin-left: auto;
+}
+.project-images iframe {
+  min-width: 45em;
+  min-height: 30em;
+}
+
+.projects {
+  order: 1;
+}
+.work-history {
+  order: 2;
+}
+.education {
+  order: 0;
+}
+
+
+@media only screen and (max-width: 1580px) {
   .main-content {
     display: grid;
-    grid-template-columns: 1.25fr 2.75fr;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 0.5fr 3fr;
+    gap: 2rem;
+    margin: 2rem;
+    justify-items: stretch;
+  }
+  .projects {
+    grid-row-end: span 2;
+  }
+
+  .project-images img {
+    max-width: 100%;
+    max-height: 30em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .project-images iframe {
+    min-width: 45em;
+    min-height: 30em;
+  }
+
+  .projects {
+    order: 1;
+  }
+  .work-history {
+    order: 2;
+  }
+  .education {
+    order: 0;
+  }
+}
+@media only screen and (max-width: 1580px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
     grid-template-rows: 0.5fr 3fr;
     gap: 2rem;
     margin: 2rem;
@@ -72,13 +147,16 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
   .main-content {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin: 2rem;
     justify-items: stretch;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .project-images img {
@@ -103,7 +181,10 @@ h4 {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 780px) {
+  .main-content {
+    margin: 2rem;
+  }
   .project-images img {
     max-width: 100%;
     max-height: 16em;
