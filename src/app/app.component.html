@@ -19,81 +19,84 @@
     </div>
   </div>
 </div>
-  <div class="main-content">
-    <div class="work-history card">
-      <div class="card-bg">
-        <h3>Work History</h3>
-      </div>
-      <div class="card-body">
-        <!-- <div class="work-history-title"><h4>Medical Device Company</h4><p>July 2024 - Present (Contract)</p></div>
-        <div class="work-history-bullets">
-          <p>Architected firmware and user interface for prototype medical device.</p>
-        </div> -->
-        <div class="work-history-title"><h4>Bacterioscan</h4><p>Sept 2023 - Present (Contract)</p></div>
-        <div class="work-history-bullets">
-          <p>Bug fixed, updated, and added to Angular/.NET application for medical device interface.</p>
-          <p>Wrote Embedded C firmware for next generation boards, and created test protocols and programs to be used by board house to ensure functionality before shipping.</p>
-          <p>Rebuilt existing Winforms desktop application with Avalonia XAML and .NET 8.0. and developed prototype Clia Waived medical device interface with the same.</p>
-        </div>
-        <div class="work-history-title"><h4>Invisibly</h4><div class="role-date"><h3>Digital Marketing Team Intern</h3><p>Aug 2021 - Dec 2021</p></div>
-        <div class="work-history-bullets">
-          <p>Implemented and tested click tracking of website using Freshpaint CDP.</p>
-          <p>Created surveys to be served in ad campaigns and curated content to be served in Invisibly's app.</p>
-        </div>
-        <div class="work-history-title"><h4>World Wide Technology</h4><div class="role-date"><h3>Global Engineering Team Intern</h3><p>May 2021 - Aug 2021</p></div></div>
-        <div class="work-history-bullets">
-          <p>Revised, tested, and reported on in-browser labs, where users can remotely test and demo hardware available at WWTs datacenters.</p>
-        </div>
-      </div>
-    </div>
-    <div class="projects card">
-      <div class="project-card-bg">
-        <button [disabled]="!selectPreviousEnabled" mat-icon-button class="example-icon favorite-icon" aria-label="left arrow" (click)="prevProjectClick()">
-            <mat-icon [ngStyle]="{'color':'white'}" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back_ios"></mat-icon>
-        </button>
-        <h3>Projects</h3>
-        <button [disabled]="!selectNextEnabled" mat-icon-button class="example-icon favorite-icon" aria-label="right arrow" (click)="nextProjectClick()">
-          <mat-icon [ngStyle]="{'color':'white'}" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios"></mat-icon>
-        </button>
-      </div>
-      <div class="card-body project-card-body">
-        <div class="project-images">
-          <img *ngIf="!projects[selectedProject].isVideo" src='{{ "./assets/" + projects[selectedProject].pic  }}'/>
-          <iframe id="0" *ngIf="projects[selectedProject].isVideo && selectedProject == 0" src="https://www.youtube.com/embed/it1eFnTtNaU?si=1OrT7rGoPneyGX3A" title="Word Scores Trailer" frameborder="0" allowfullscreen></iframe>
-          <iframe id="1" *ngIf="projects[selectedProject].isVideo && selectedProject == 1" src="https://www.youtube.com/embed/eCkVeCV0-V4?si=m7qVleYTy3vM_RHO" title="M.E.R.N. Workout App" frameborder="0" allowfullscreen></iframe>
-          <iframe id="3" *ngIf="projects[selectedProject].isVideo && selectedProject == 3" src="https://www.youtube.com/embed/KFE9MKKv588?si=wlONbCU7o1g2v5bM" title="RTOS Physics Engine" frameborder="0" allowfullscreen></iframe>
-          <iframe id="4" *ngIf="projects[selectedProject].isVideo && selectedProject == 4" src="https://www.youtube.com/embed/frYtEo_HdXY?si=2wrbc5ooLAhlfpM3" title="People Counter" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="project-desc">
-        <div class="work-history-title"><h4>{{projects[selectedProject].title}}</h4>
-        <p>{{projects[selectedProject].dates}}</p></div>
 
-        <div class="work-history-bullets">
-          <p *ngFor="let bullet of projects[selectedProject].desc">{{bullet}}</p>
-        </div>
-
-        <a href="https://store.steampowered.com/app/3340020/Word_Scores/" *ngIf="projects[selectedProject].hasLink">
-          <button [ngStyle]="{'color':'darkslategray'}" [disabled]="!selectPreviousEnabled" mat-icon-button class="example-icon favorite-icon" aria-label="link" (click)="prevProjectClick()">
-            <mat-icon>link</mat-icon>
-          </button>
-          <p>Steam Page</p>
-        </a>
-      </div>
-    </div>
-    <div class="education card">
-      <div class="card-bg">
-        <h3>Education</h3>
-      </div>
-      <div class="card-body">
-        <div class="work-history-title">
-          <h4>B.S. Electrical & Computer Engineering</h4>
-          <div class="college">
-            <img width="64" src="./assets/culogo.png" alt="CU Buffalo Logo"/>
-            <p>University of Colorado Boulder - May 2022</p>
-          </div>
-        </div>
-      </div>
+<div class="main-content">
+  <div class="work-history card">
+  <div class="card-bg">
+  <h3>Professional Skills</h3>
   </div>
+  <div class="card-body">
+
+    <div class="work-history-title"><h4>Maxfi Surgical Simulations - Software Engineer</h4><p>Jul 2024 - Present (Contract)</p></div>
+    <div class="work-history-bullets">
+      <p>.NET 8.0 and C++ Firmware</p>
+      <p>XAML (Avalonia) User Interface Design</p>
+      <p>Testing and Documentation</p>
     </div>
+
+    <div class="work-history-title"><h4>Bacterioscan - Software Engineer</h4><p>Sept 2023 - Present (Contract)</p></div>
+    <div class="work-history-bullets">
+      <p>Embedded C Firmware</p>
+      <p>Typescript (Angular)</p>
+      <p>(C#) .NET 8.0 REST APIs</p>
+      <p>XAML (Avalonia) User Interface Design</p>
+      <p>Test Driven Development</p>
+    </div>
+
+    <div class="work-history-title"><h4>World Wide Technology - Global Engineering Team Intern</h4><p>May 2021 - Aug 2021</p></div>
+    <div class="work-history-bullets">
+      <p>Debugging and Testing</p>
+      <p>Agile Development</p>
+    </div>
+  </div>
+  </div>
+  <div class="projects card">
+  <div class="project-card-bg">
+  <button [disabled]="!selectPreviousEnabled" mat-icon-button class="example-icon favorite-icon" aria-label="left arrow" (click)="prevProjectClick()">
+  <mat-icon [ngStyle]="{'color':'white'}" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_back_ios"></mat-icon>
+  </button>
+  <h3>Passion Projects</h3>
+  <button [disabled]="!selectNextEnabled" mat-icon-button class="example-icon favorite-icon" aria-label="right arrow" (click)="nextProjectClick()">
+  <mat-icon [ngStyle]="{'color':'white'}" aria-hidden="false" aria-label="Example home icon" fontIcon="arrow_forward_ios"></mat-icon>
+  </button>
+  </div>
+  <div class="card-body project-card-body">
+  <div class="project-images">
+  <img *ngIf="!projects[selectedProject].isVideo" src='{{ "./assets/" + projects[selectedProject].pic  }}'/>
+  <iframe id="0" *ngIf="projects[selectedProject].isVideo && selectedProject == 0" src="https://www.youtube.com/embed/it1eFnTtNaU?si=1OrT7rGoPneyGX3A" title="Word Scores Trailer" frameborder="0" allowfullscreen></iframe>
+  <iframe id="1" *ngIf="projects[selectedProject].isVideo && selectedProject == 1" src="https://www.youtube.com/embed/eCkVeCV0-V4?si=m7qVleYTy3vM_RHO" title="M.E.R.N. Workout App" frameborder="0" allowfullscreen></iframe>
+  <iframe id="3" *ngIf="projects[selectedProject].isVideo && selectedProject == 3" src="https://www.youtube.com/embed/KFE9MKKv588?si=wlONbCU7o1g2v5bM" title="RTOS Physics Engine" frameborder="0" allowfullscreen></iframe>
+  <iframe id="4" *ngIf="projects[selectedProject].isVideo && selectedProject == 4" src="https://www.youtube.com/embed/frYtEo_HdXY?si=2wrbc5ooLAhlfpM3" title="People Counter" frameborder="0" allowfullscreen></iframe>
+  </div>
+  </div>
+  <div class="project-desc">
+  <div class="work-history-title"><h4>{{projects[selectedProject].title}}</h4>
+  <p>{{projects[selectedProject].dates}}</p></div>
+
+  <div class="work-history-bullets">
+  <p *ngFor="let bullet of projects[selectedProject].desc">{{bullet}}</p>
+  </div>
+
+  <a href="https://store.steampowered.com/app/3340020/Word_Scores/" *ngIf="projects[selectedProject].hasLink">
+  <button [ngStyle]="{'color':'darkslategray'}" [disabled]="!selectPreviousEnabled" mat-icon-button class="example-icon favorite-icon" aria-label="link" (click)="prevProjectClick()">
+  <mat-icon>link</mat-icon>
+  </button>
+  <p>Steam Page</p>
+  </a>
+  </div>
+  </div>
+  <div class="education card">
+  <div class="card-bg">
+  <h3>Education</h3>
+  </div>
+  <div class="card-body">
+  <div class="work-history-title">
+  <h4>B.S. Electrical & Computer Engineering</h4>
+  <div class="college">
+  <img width="64" src="./assets/culogo.png" alt="CU Buffalo Logo"/>
+  <p>University of Colorado Boulder - May 2022</p>
+  </div>
+  </div>
+  </div>
+  </div>
   </div>
