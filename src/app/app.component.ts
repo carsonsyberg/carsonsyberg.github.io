@@ -17,10 +17,10 @@ export class AppComponent {
     var newProject: Project = {
       title: "Word Scores",
       dates: "Sept 2024 - Present",
-      desc: ["Playing the Wordle every morning and loving Tetris inspired me to create this game.", "I used the open source game engine Godot for development and designed all of the art and animations needed for the game.", "I'm working on getting the game published to Steam at the moment, it just needs a bit more polishing, play-testing, and balancing."],
+      desc: ["Playing the Wordle every morning and loving Tetris inspired me to create this game.", "I used the open source game engine Godot for development and designed all of the art and animations needed for the game.", "Available for sale on Steam May 5th 2025!"],
       pic: "wordscores.png",
       isVideo: true,
-      hasLink: false,
+      hasLink: true,
     }
     this.projects.push(newProject)
     newProject = {
@@ -38,7 +38,7 @@ export class AppComponent {
       desc: ["This soon to release Steam game started in a game jam competition in January of 2024.", "I created the art for and programmed the vine spreading AI which has 256 different sprites for possible connections the vine tiles can make, leading to a more organic looking spread.", "Over the past few months I have moved more into an art role in the project as we approach release, creating all art and animations."],
       pic: "spaceman.jpg",
       isVideo: false,
-      hasLink: true,
+      hasLink: false,
     }
     this.projects.push(newProject)
     newProject = {
